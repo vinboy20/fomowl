@@ -23,7 +23,7 @@
         loop: true,
         spaceBetween: 2,
         centeredSlides: true,
-       
+
         autoplay: {
             delay: 2000,
             disableOnInteraction: false
@@ -54,7 +54,7 @@
         }
     });
 
-  
+
     /*------------------
          Preloader
      --------------------*/
@@ -73,12 +73,34 @@
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-70px";
-  }
-  prevScrollpos = currentScrollPos;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+    } else {
+        document.getElementById("header").style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    // Function to toggle the menu
+    menuToggle.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevent the event from propagating to the document
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Function to hide the menu when clicking outside
+    document.addEventListener("click", (e) => {
+        if (
+            mobileMenu.style.display === "block" &&
+            !mobileMenu.contains(e.target) &&
+            !menuToggle.contains(e.target)
+        ) {
+            mobileMenu.style.display = "none";
+        }
+    });
+});

@@ -27,7 +27,7 @@
 
 <body class="">
     <!-- ======= Header ======= -->
-    <header id="header" class="w-full d-flex align-items-center ">
+    <header id="header" class="w-full hidden lg:flex items-center ">
         <div class="containers containers-xxl w-full d-flex align-items-center justify-content-between">
 
             <div id="logo" class="">
@@ -63,6 +63,39 @@
 
         </div>
     </header><!-- End Header -->
+
+    <header id="header" class="nav-container flex lg:hidden">
+        <div class="containers">
+            <div class="item">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.gif" class="h-12 object-cover" alt=" Logo">
+                    </a>
+                </div>
+
+               
+                <div class="flex gap-4 items-center">
+                    <div>
+                        <a class="buy-tickets mr-auto" href="#">Buy Token</a>
+                    </div>
+                    <div class="menu-toggle">
+                        <i class="toggle-icon text-4xl">≡</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a class="active scrollto" href="index.html">Home</a></li>
+                    <li><a class="" href="">NFTs</a></li>
+                    <li><a class="" href="">Merch Shop</a></li>
+                    <li><a class="" href="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+   
+
 
     <!-- ==================== HERO Section ================= -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
@@ -131,17 +164,17 @@
     <section class="collection">
         <div class="containers containers-xxl">
             <div class="bg-[#B2B2B2] flex justify-center">
-                <div class="bg-[#D1D1D1] flex flex-col justify-center items-center w-[40%] py-4">
-                    <img class="w-16 h-16" src="assets/images/cart.png" alt="">
-                    <div class="flex gap-6 mt-2">
-                        <p class="text-xl text-[#151515]">Merch</p>
-                        <p class="text-xl text-[#151515]">Shop</p>
+                <div class="bg-[#D1D1D1] flex flex-col justify-center items-center w-[40%] py-2 md:py-4">
+                    <img class="w-10 h-10 md:w-16 md:h-16" src="assets/images/cart.png" alt="">
+                    <div class="flex gap-6 mt-1 md:mt-2">
+                        <p class="text-lg md:text-xl text-[#151515]">Merch</p>
+                        <p class="text-lg md:text-xl text-[#151515]">Shop</p>
                     </div>
                 </div>
             </div>
-            <h2 class="my-4 font-Kalnia text-white text-3xl">Fomowl NFTs Collections</h2>
+            <h2 class="my-4 font-Kalnia text-white text-3xl hidden md:flex">Fomowl NFTs Collections</h2>
         </div>
-        <div class="mySwiper swiper bg-black">
+        <div class="mySwiper swiper bg-black mt-3 md:mt-0">
             <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
                     <img src="assets/images/hero1.png" class="" alt="">
@@ -166,23 +199,25 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="flex w-[48%] justify-center mx-auto py-8">
-                <div class="space-y-8">
-                    <p class="text-xl text-white leading-10">
-                        Forget basic JPEGs, these aren’t your average digital collectibles. Every piece in the
-                        collection is as rare and intriguing as your late-night OWL impulses
-                    </p>
-                    <p class="text-xl text-white leading-10">
-                        Brought to life by nocturnal geniuses and meme masterminds, FOMOWL embodies the peak of degen
-                        culture.
-                        Ready to wise up? Dive into the flock and claim your piece of the action by clicking the button
-                        below
-                    </p>
-                    <button type="button"
-                        class="py-4 text-2xl font-Kalnia text-center text-[#151515] bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2] block w-full">
-                        NFTs Available
-                    </button>
+        <div class="containers containers-xxl">
+            <div class="content">
+                <div class="flex w-full md:w-[48%] md:justify-center md:mx-auto py-8">
+                    <div class="space-y-6 md:space-y-8">
+                        <p class="text-sm md:text-xl text-white md:leading-10">
+                            Forget basic JPEGs, these aren’t your average digital collectibles. Every piece in the
+                            collection is as rare and intriguing as your late-night OWL impulses
+                        </p>
+                        <p class="text-sm md:text-xl text-white md:leading-10">
+                            Brought to life by nocturnal geniuses and meme masterminds, FOMOWL embodies the peak of degen
+                            culture.
+                            Ready to wise up? Dive into the flock and claim your piece of the action by clicking the button
+                            below
+                        </p>
+                        <button type="button"
+                            class="py-3 md:py-4 text-xl md:text-2xl font-Kalnia text-center text-white md:text-[#151515] bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2] block w-full">
+                            NFTs Available
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,13 +251,13 @@
     <!-- ==================== About Section ================= -->
     <div class="home-about py-4">
         <div class="containers containers-xxl">
-            <h2 class="font-Kalnia text-3xl text-white mb-4">About Fomowl</h2>
-            <div class="row">
-                <div class="col-md-7" data-aos="fade-right">
+            <h2 class="font-Kalnia test-2xl md:text-3xl text-white mb-4">About Fomowl</h2>
+            <div class="row gy-2 md:gy-0">
+                <div class="col-md-12 col-lg-7" data-aos="fade-right">
                     <img class="h-[320px] w-full object-fill" src="assets/images/hero3.png" alt="">
                 </div>
-                <div class="col-md-5" data-aos="fade-left">
-                    <div class="text-2xl text-white leading-10">
+                <div class="col-md-12 col-lg-5" data-aos="fade-left">
+                    <div class="text-lg md:text-2xl text-white md:leading-10">
                         Welcome to FOMOwl, where wisdom meets whimsy! At the heart of our project is the
                         delightful FOMOwl, an owl that embodies curiosity, humor, and a touch of mischief.
                         In a world where trends constantly shift and evolve, FOMOwl reminds us to embrace the
@@ -235,7 +270,7 @@
 
     <!-- ==================== shop Section ================= -->
     <div class="home-shop py-6">
-        <div class="px-20">
+        <div class="containers">
             <h2 class="font-Kalnia text-3xl text-center mb-6">Shop Merch</h2>
 
             <div class="slider">
@@ -255,7 +290,7 @@
 
             <div class="flex justify-center mt-4">
                 <button type="button"
-                    class="w-[25.30rem] py-2 text-lg font-Kalnia text-center text-white bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2]">
+                    class="w-[50%] md:w-[39%] py-2 text-lg font-Kalnia text-center text-white bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2]">
                     Shop Now
                 </button>
             </div>
@@ -265,10 +300,10 @@
 
     <!-- ==================== Buy Section ================= -->
 
-    <div class="buy pl-20 pt-12">
+    <div class="buy pl-8 pr-8 md:pr-0 md:pl-20 pt-8 md:pt-12">
         <h2 class="heading" data-aos="fade-down-right">How To Buy</h2>
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row gy-3 gy-md-0">
+            <div class="col-md-8 order-1 order-md-0">
                 <div class="row gy-4">
                     <div class="col-md-6" data-aos="fade-right">
                         <h4 class="title">1. Create a wallet</h4>
@@ -307,8 +342,8 @@
                 </p>
             </div>
 
-            <div class="col-md-4 flex items-end" data-aos="fade-left"  data-aos-delay="300">
-                <img src="assets/images/fomo.png" alt="">
+            <div class="col-md-4 flex items-center md:items-end" data-aos="fade-left"  data-aos-delay="300">
+                <img class="mt-[-30px] md:mt-0" src="assets/images/fomo.png" alt="">
             </div>
         </div>
     </div>
@@ -401,11 +436,7 @@
 
     </script>
 
-    <script>
-        const slider = document.querySelector('.slider');
-        const slides = document.querySelectorAll('.slide');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
+    <!-- <script>
         let currentIndex = 0;
 
         function updateSlider() {
@@ -428,15 +459,12 @@
             updateSlider();
         }
 
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-
         // Auto-rotate every 5 seconds
         setInterval(nextSlide, 5000);
 
         // Initial setup
         updateSlider();
-    </script>
+    </script> -->
     <script>
         $(document).ready(function () {
             $('.slider').slick({
@@ -449,7 +477,7 @@
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 3,
                             centerMode: true
                         }
                     }
