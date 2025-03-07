@@ -635,8 +635,6 @@ body {
     padding-top: 6rem;
 }
 
-
-
 .about .roadmap {
     margin-top: 3rem;
     padding-bottom: 1rem;
@@ -644,7 +642,8 @@ body {
 }
 
 .about .content {
-    height: 23.9rem;
+    /* height: 23.9rem; */
+    height: 100%;
 }
 
 .about .title-container {
@@ -679,9 +678,9 @@ body {
     .about {
         padding-top: 5rem;
     }
-    .about .content {
+    /* .about .content {
         height: 24.9rem;
-    }
+    } */
 
     .about .title {
         font-size: 1rem;
@@ -691,6 +690,7 @@ body {
         margin-bottom: 0.7rem;
     } */
 }
+
 
 .dot {
     width: 10px;
@@ -704,7 +704,7 @@ body {
     padding: 2.2rem 0;
 }
 
-.cta .title {
+.cta h2{
     font-size: 2.3rem;
     color: #FFFFFF;
     font-family: "Roboto", serif;
@@ -723,4 +723,17 @@ body {
     font-size: 1.3rem;
     color: #FFFFFF;
     font-family: "Roboto", serif;
+}
+
+@media (max-width:767px) {
+    .cta h2{
+        font-size: 1.5rem;
+    }
+    .cta .join {
+        font-size: 1rem;
+    }
+    .cta .item {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+    }
 }
