@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fomoml</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 
     <link rel="stylesheet" href="assets/remixicon/remixicon.css">
     <link rel="stylesheet" href="src/output.css">
@@ -175,7 +175,7 @@
             <h2 class="my-4 font-Kalnia text-white text-3xl hidden md:flex">Fomowl NFTs Collections</h2>
         </div>
         <div class="mySwiper swiper bg-black mt-3 md:mt-0">
-            <div class="swiper-wrapper align-items-center">
+            <div class="swiper-wrapper align-items-center !h-[200px] md:h-auto">
                 <div class="swiper-slide">
                     <img src="assets/images/hero1.png" class="" alt="">
                 </div>
@@ -214,7 +214,7 @@
                             below
                         </p>
                         <button type="button"
-                            class="py-3 md:py-4 text-xl md:text-2xl font-Kalnia text-center text-white md:text-[#151515] bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2] block w-full">
+                            class="py-2.5 md:py-4 text-xl md:text-2xl font-Kalnia text-center text-white md:text-[#151515] bg-[#FA2A24] rounded-lg hover:bg-[#B2B2B2] block w-full">
                             NFTs Available
                         </button>
                     </div>
@@ -222,7 +222,7 @@
             </div>
         </div>
         <div class="mySwiper swiper bg-black">
-            <div class="swiper-wrapper align-items-center">
+            <div class="swiper-wrapper align-items-center !h-[200px] md:h-auto">
                 <div class="swiper-slide">
                     <img src="assets/images/hero1.png" class="" alt="">
                 </div>
@@ -249,27 +249,28 @@
     </section>
 
     <!-- ==================== About Section ================= -->
-    <div class="home-about py-4">
+    <div class="home-about py-4 w-full overflow-hidden">
         <div class="containers containers-xxl">
-            <h2 class="font-Kalnia test-2xl md:text-3xl text-white mb-4">About Fomowl</h2>
-            <div class="row gy-2 md:gy-0">
+            <h2 class="font-Kalnia text-2xl md:text-3xl text-white mb-4">About Fomowl</h2>
+            <div class="row gy-3 md:gy-0">
                 <div class="col-md-12 col-lg-7" data-aos="fade-right">
-                    <img class="h-[320px] w-full object-fill" src="assets/images/hero3.png" alt="">
+                    <img class="h-[320px] w-full object-cover overflow-x-hidden" src="assets/images/hero3.png" alt="">
                 </div>
                 <div class="col-md-12 col-lg-5" data-aos="fade-left">
-                    <div class="text-lg md:text-2xl text-white md:leading-10">
+                    <p class="text-lg md:text-2xl text-white md:leading-10">
+                        
                         Welcome to FOMOwl, where wisdom meets whimsy! At the heart of our project is the
                         delightful FOMOwl, an owl that embodies curiosity, humor, and a touch of mischief.
                         In a world where trends constantly shift and evolve, FOMOwl reminds us to embrace the
                         fun and enjoy the ride—without taking life too seriously.
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- ==================== shop Section ================= -->
-    <div class="home-shop py-6">
+    <div class="home-shop py-6 w-full overflow-hidden">
         <div class="containers">
             <h2 class="font-Kalnia text-3xl text-center mb-6">Shop Merch</h2>
 
@@ -300,7 +301,7 @@
 
     <!-- ==================== Buy Section ================= -->
 
-    <div class="buy pl-8 pr-8 md:pr-0 md:pl-20 pt-8 md:pt-12">
+    <div class="buy w-full pl-8 pr-8 md:pr-0 md:pl-20 pt-8 md:pt-12 overflow-hidden">
         <h2 class="heading" data-aos="fade-down-right">How To Buy</h2>
         <div class="row gy-3 gy-md-0">
             <div class="col-md-8 order-1 order-md-0">
@@ -343,12 +344,13 @@
             </div>
 
             <div class="col-md-4 flex items-center md:items-end" data-aos="fade-left"  data-aos-delay="300">
-                <img class="mt-[-30px] md:mt-0" src="assets/images/fomo.png" alt="">
+               
+                <img class="mt-[-30px] w-full md:mt-0 overflow-hidden" src="assets/images/fomo.png" alt="">
             </div>
         </div>
     </div>
 
-    <div class="chart">
+    <div class="chart overflow-hidden">
         <div class="row gy-5">
             <div id="chart" class="col-md-6 order-1 order-lg-0">
                 <iframe
@@ -388,11 +390,6 @@
             </a>
             
         </div>
-
-        <!-- <div class="copyright">
-            <span>© 2025 by</span>
-            <a target="_blank" class="tel-link" href="https://t.me/iamkingopa">MemeKing</a>
-        </div> -->
     </section>
 
 

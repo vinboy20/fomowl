@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Kalnia';
+    src: url('/assets/Kalnia/Kalnia-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
 html,
 body,
 div,
@@ -564,6 +584,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    overflow: hidden;
 }
 
 .footer ul {
